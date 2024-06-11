@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford F-150</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script> <!-- Include JavaScript file -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/logo.webp" alt="Ford Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="history">
+            <div class="container">
+                <h2>History of Ford F-150</h2>
+                <p>The Ford F-150 was first introduced in 1975 and has since become a staple in the truck industry. It has seen numerous redesigns and improvements over the years, making it one of the most popular trucks on the market.
+				The new generation F-150 was introduced for the 2009 model year. These trucks differ in grill and headlight styling from the Super Duty; standard cab models again have two doors instead of four.
+				The entire engine lineup for the F-150 (excluding the SVT Raptor) has been updated for the 2011 model year. Along with two new V8s, the F-150 gets a new 3.7L V6 engine and a powerful 3.5L twin-turbocharged V6 dubbed EcoBoost. An automatic transmission is the only option.</p>
+                <img src="images/ford-f150-history.jpg" alt="Ford F-150 History" class="float-right">
+                <blockquote>
+                    "The Ford F-150 has been America's best-selling truck for decades, combining power, performance, and reliability."
+                </blockquote>
+            </div>
+        </section>
+        <section id="features">
+            <div class="container">
+                <h2>Advanced Features</h2>
+                <div class="overflow-container">
+                    <p>The latest Ford F-150 comes equipped with advanced features such as a high-strength, military-grade, aluminum-alloy body, Pro Power Onboard, and a fully hybrid powertrain option. These features make the F-150 not only powerful but also efficient and versatile.</p>
+                </div>
+                <img src="images/ford-f150-features.jpg" alt="Ford F-150 Features" >
+                <div class="z-index-container">
+                    <div class="box box1">
+                        <h3>Pro Power Onboard</h3>
+                        <p>The Pro Power Onboard feature transforms your Ford F-150 into a mobile generator. This innovative feature provides up to 7.2 kW of available power, which is enough to power tools, appliances, and even a campsite.</p>
+                        <ul>
+                            <li><strong>Convenience:</strong> Easily power your equipment on the go without the need for an external generator.</li>
+                            <li><strong>Versatility:</strong> Supports a wide range of devices and tools, making it ideal for construction sites, camping trips, and tailgating events.</li>
+                            <li><strong>Efficiency:</strong> Reduces the need for additional equipment, saving space and weight in your vehicle.</li>
+                        </ul>
+                    </div>
+                    <div class="box box2">
+                        <h3>Hybrid Powertrain</h3>
+                        <p>The Ford F-150 offers a fully hybrid powertrain option, combining a traditional gasoline engine with an electric motor for enhanced efficiency and performance.</p>
+                        <ul>
+                            <li><strong>Fuel Efficiency:</strong> Achieve better fuel economy without compromising on power.</li>
+                            <li><strong>Performance:</strong> Enjoy the smooth and powerful performance of a hybrid system.</li>
+                            <li><strong>Environmental Impact:</strong> Reduce emissions and contribute to a greener environment.</li>
+                        </ul>
+                    </div>
+                    <div class="box box3">
+                        <h3>High-Strength, Military-Grade, Aluminum-Alloy Body</h3>
+                        <p>The F-150 is built with a high-strength, military-grade, aluminum-alloy body, making it both lightweight and durable.</p>
+                        <ul>
+                            <li><strong>Durability:</strong> Built to withstand tough conditions and heavy use.</li>
+                            <li><strong>Weight Reduction:</strong> Lighter weight improves fuel efficiency and handling.</li>
+                            <li><strong>Strength:</strong> Provides excellent protection and longevity.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews">
+            <div class="container">
+                <h2>User Reviews</h2>
+                <div class="review-container">
+                    <div class="review-box">
+                        <h3>Comfort</h3>
+                        <p>The seats are incredibly comfortable, providing great support for long drives. The ride quality is smooth, absorbing most of the bumps on the road.</p>
+                    </div>
+                    <div class="review-box">
+                        <h3>Performance</h3>
+                        <p>The engine is powerful and responsive, delivering excellent acceleration and towing capability. The handling is surprisingly agile for a truck of this size.</p>
+                    </div>
+                    <div class="review-box">
+                        <h3>Safety</h3>
+                        <p>The F-150 is equipped with numerous safety features, including advanced driver-assistance systems. It has a solid build and performs well in crash tests.</p>
+                    </div>
+                    <div class="review-box">
+                        <h3>Value</h3>
+                        <p>Considering the features and performance, the F-150 offers great value for the money. It's a reliable and versatile truck that holds its value well over time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <p>&copy; 2024 Ford F-150 Enthusiasts. All rights reserved.</p>
+            <p>Contact us at <a href="mailto:info@fordf150.com">info@fordf150.com</a></p>
+        </div>
+    </footer>
+    <button id="scroll-to-top-btn">↑</button> <!-- Scroll to top button -->
+    
+    
+    <div id="popup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>More Information on Ford F-150</h2>
+            <p>The Ford F-150 offers a range of models and configurations to suit different needs and preferences. From the rugged XL to the luxurious Limited, there's an F-150 for everyone.</p>
+        </div>
+    </div>
+</body>
+</html>

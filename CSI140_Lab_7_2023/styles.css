@@ -1,0 +1,301 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: url('images/background.jpg') no-repeat center center/cover;
+    background-blend-mode: darken;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgba(0, 87, 183, 0.9);
+    color: white;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+header .logo {
+    float: left;
+    width: 160px;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+    padding-top: 100px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #ccc;
+    padding-left: 10px;
+    margin-left: 0;
+}
+
+/* Float Styles */
+.float-right {
+    float: right;
+    margin: 0 0 10px 10px;
+    width: 25%;
+    height: auto;
+}
+
+.float-left {
+    float: left;
+    margin: 0 20px 20px 0;
+    width: 50%;
+    height: auto;
+}
+
+
+img[src*="ford-f150-features.jpg"] {
+    display: block;
+    clear: both;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.overflow-container {
+    width: 450px;
+    height: 100px;
+    overflow: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+.z-index-container {
+    position: relative;
+    height: auto;
+
+}
+
+.box {
+    width: 38%;
+    padding: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    color: white;
+    text-align: left;
+    line-height: 1.6;
+    z-index: 0;
+}
+
+.box1 {
+    background-color: rgba(255, 0, 0, 0.8);
+
+}
+
+.box2 {
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+.box3 {
+    background-color: rgba(0, 128, 0, 0.8);
+}
+
+
+.review-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-box {
+    flex: 1;
+    min-width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.review-box h3 {
+    margin-top: 0;
+}
+
+.review-box:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+.position-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.relative {
+    position: relative;
+    background-color: lightblue;
+    width: 200px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.absolute {
+    position: absolute;
+    background-color: lightgreen;
+    width: 200px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: lightcoral;
+    width: 200px;
+    height: 100px;
+    top: 10px;
+    right: 10px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: lightyellow;
+    width: 200px;
+    height: 100px;
+    top: 0;
+}
+
+
+.pseudo-elements::before {
+    content: "â˜… ";
+    color: gold;
+}
+
+.pseudo-elements::after {
+    content: " â˜…";
+    color: gold;
+}
+
+.pseudo-elements:hover {
+    color: red;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+#scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    padding: 10px;
+    font-size: 24px;
+    color: white;
+    background-color: #0057b7;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#scroll-to-top-btn:hover {
+    background-color: #003d99;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
